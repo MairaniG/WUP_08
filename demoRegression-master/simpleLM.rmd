@@ -43,5 +43,11 @@ summary.lm(ageModel)
 
 For model length~age, adjusted $r^2$ =0.5073, this is less than the adjusted $r^2$ for neck so this model is not as good as the neck model.  
 
-
+```{r}
+chestModel <- lm(LENGTH~CHEST,data=bears)
+plot(LENGTH~CHEST,data=bears)
+abline(chestModel)
+summary.lm(chestModel)
+```
+For model length~chest, adjusted $r^2$ =0.7869 , this is a little bit better than the adjusted $r^2$ for age so this model is slightly better than the age model.  
 
