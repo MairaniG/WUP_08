@@ -51,3 +51,14 @@ summary.lm(chestModel)
 ```
 For model length~chest, adjusted $r^2$ =0.7869 , this is a little bit better than the adjusted $r^2$ for age so this model is slightly better than the age model.  
 
+```{r}
+headlenModel <- lm(LENGTH~HEADLEN,data=bears)
+plot(LENGTH~HEADLEN,data=bears)
+abline(headlenModel)
+summary.lm(headlenModel)
+```
+
+For model length~HEADLEN, adjusted $r^2$ =0.8434  , this is a little bit better than the adjusted $r^2$ for chest so this model is slightly better than the chest model.  
+
+
+
