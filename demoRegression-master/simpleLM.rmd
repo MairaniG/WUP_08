@@ -60,5 +60,12 @@ summary.lm(headlenModel)
 
 For model length~HEADLEN, adjusted $r^2$ =0.8434  , this is a little bit better than the adjusted $r^2$ for chest so this model is slightly better than the chest model.  
 
+```{r}
+headwthModel <- lm(LENGTH~HEADWTH,data=bears)
+plot(LENGTH~HEADWTH,data=bears)
+abline(headwthModel)
+summary.lm(headwthModel)
+```
+For model length~HEADWTH, adjusted $r^2$ =0.5321   , this is worse than the adjusted $r^2$ for HEADLEN so this model is worse than the chest model.  
 
 
