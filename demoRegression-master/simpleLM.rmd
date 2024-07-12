@@ -68,4 +68,22 @@ summary.lm(headwthModel)
 ```
 For model length~HEADWTH, adjusted $r^2$ =0.5321   , this is worse than the adjusted $r^2$ for HEADLEN so this model is worse than the chest model.  
 
+```{r}
+weightModel <- lm(LENGTH~WEIGHT,data=bears)
+plot(LENGTH~WEIGHT,data=bears)
+abline(weightModel)
+summary.lm(weightModel)
+```
+
+For model length~WEIGHT, the adjusted $r^2$ =0.7423, this is better than the adjusted $r^2$ for HEADWTH so this model is better than the chest model. 
+
+```{r}
+sexModel <- lm(LENGTH~SEX,data=bears)
+plot(LENGTH~SEX,data=bears)
+summary.lm(sexModel)
+```
+
+For model length~SEX, the adjusted $r^2$ =-0.008373 , this is a lot worse than the adjusted $r^2$ for WEIGHT so this model is worse than the weight model.  
+
+
 
