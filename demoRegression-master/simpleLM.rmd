@@ -88,4 +88,6 @@ summary.lm(sexModel)
 
 For model length~SEX, the adjusted $r^2$ =-0.008373 , this is a lot worse than the adjusted $r^2$ for WEIGHT so this model is worse than the WEIGHT model.  
 
+## Conclusion
 
+Based on the prediction of LENGTH, the best model was HEADLEN. Its value of Adjusted-R squared was better than the rest as it was bigger. Its $r^2$ was equal to 0.8434, bigger than the second highest which was CHEST at 0.7869.  
